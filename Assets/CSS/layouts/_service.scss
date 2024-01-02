@@ -1,0 +1,48 @@
+.sarvice-area{
+    background-color: #343a40;
+    .services{
+        .singel-service{
+            border: 1px solid $border_gray;
+            padding: 30px;
+            width: 380px;
+            margin-right: 30px;
+            background-color:#fff ;
+            color:#343a40;
+            float: left;
+            transition:.3s;
+            &:hover{
+                border-color: $btn-color;
+                i{
+                    background-color:$btn-color;
+                    color: $white;
+                    border-color: $btn-color;
+                }
+            }
+            &:last-child ,
+            &:nth-child(3){
+                margin-right: 0;
+            }
+            i{
+                border: 1px solid $border_gray;
+                text-align: center;
+                font-size: 30px;
+                width:100px;
+                height:100px;
+                line-height: 100px;
+                border-radius: 50%;
+                transition: .3s;
+            }
+            h4{
+                font-size: 25px;
+                text-transform: capitalize;
+                margin: 15px 0;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+    }
+}
+
+
+

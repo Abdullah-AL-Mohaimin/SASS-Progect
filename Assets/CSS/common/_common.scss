@@ -1,0 +1,174 @@
+
+// font-size and font-family start heare 
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #212529;
+    color: #dddddd;
+}
+// font-size and font-family end heare 
+
+// color start heare
+
+// common color
+$white: white ;
+$black: black ;
+$bg_color:#dddddd;
+
+// primary color
+$header-color:#20c997;
+$btn-color:#ff7720;
+$bg_gray:#f2f2f2;
+$border_gray:#ddd;
+
+
+// color end heare #ff7720
+
+
+// Common coad start hear
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 1200px;
+    margin: 0 auto;
+}
+.fix:before,
+.fix:after{
+    content:'';
+    clear: both;
+    display: table;
+}
+.bg{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &:before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: .75;
+        position: absolute;
+        background-color: $black;
+        z-index: -1;
+
+    }
+}
+a{
+    text-decoration: none;
+    color: $black ;
+    transition: .3s;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+
+
+//baton CSS
+
+
+.btn{
+    padding: 10px 30px;
+    color:$btn-color ;
+    text-transform: capitalize;
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 50px;
+    &.btn-box{
+        background-color: $btn-color;     
+        color:$white ;
+        padding: 8px 40px;
+        transition: .3s;
+        &:hover{
+            border: 2px solid $btn-color;
+        }
+    }
+    &.btn-border{
+        border: 2px solid $btn-color;
+        padding: 8px 40px;
+        transition: .3s;
+        &:hover{
+            color: $btn-color;
+        }
+    }
+}
+// Section-title CSS
+
+.section-title{
+    margin-bottom: 1rem!important;
+    position: relative!important;
+    display: flex!important;
+    h2{
+        line-height: 1.3;
+        opacity: 0.3;
+        color: #6c757d!important;
+        text-transform: uppercase!important;
+        margin-bottom: 0!important;
+        width: 100%!important;
+        font-weight: 600;
+        font-size:8.00rem;
+    }
+    h4{
+        line-height: 1.5!important;
+        align-self: center!important;
+        width: 100%!important;
+        position: absolute!important;
+        font-weight: 600;
+        font-size: 45px;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 85px;
+            height: 3px;
+            background-color:$btn-color;
+            left: 46%;
+            transform: translateY(70px);
+        }
+    }
+    p{
+        max-width: 800px;
+        margin: 0 auto;
+         
+    }
+}
+
+
+//margin and padding
+
+@for $i from 1  through 20{
+    .pt-#{$i * 10}{
+        padding-top: $i * 10px ;
+    } 
+    .pb-#{$i * 10}{
+        padding-bottom: $i * 10px ;
+    } 
+    .mt-#{$i * 10}{
+        margin-top: $i * 10px ;
+    } 
+    .mb-#{$i * 10}{
+        margin-bottom: $i * 10px ;
+    } 
+}
+
+
+$list:left,center,right,justify;
+@each $i in $list {
+    .text-#{$i}{
+        text-align: $i;
+    }
+    
+}

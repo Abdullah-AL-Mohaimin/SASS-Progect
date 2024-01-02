@@ -1,0 +1,51 @@
+.blog-area{
+    background-color: #343a40;
+
+    .singel-blog {
+        margin-right: 25px;
+        float: left;
+        background-color: $bg_gray;
+        color:#343a40;
+        width: 383px;
+        border: 1px solid $border_gray;
+        overflow: hidden;
+        &:hover{
+            .blog-img{
+                transform: scale(1.1);
+            }
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+       .blog-img {
+           height: 300px;
+           background-size: cover;
+           background-position: center;
+           transition: .3s;
+        }
+        .blog-content {
+            padding: 20px;
+            h4 {
+                text-transform: capitalize;
+                font-size: 25px;
+            }
+            p {
+                padding: 20px 0;
+                text-align: justify;
+            }
+            a{
+                color: $black;    
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+
+    .banner{
+        text-align: center;
+        h2{
+           text-align: center;
+           font-weight: 600;
+           font-size: 30px;
+           color: $white;
+        }
+        p{
+            font-size: 20px;
+            color: $white;
+        }
+        a{
+            margin: 20px 10px;
+        }
+        .btn{
+            &.btn-box{
+                background-color: $btn-color;
+                transition: .5s;
+                &:hover{
+                    background-color: #15283e;
+                    color: $btn-color;
+                    border: 0;
+                }
+            }
+            &.btn-border{
+                border: 2px solid $btn-color;
+                padding: 8px 40px;
+                transition: .5s;
+                &:hover{
+                    background-color: $btn-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+
+
+    

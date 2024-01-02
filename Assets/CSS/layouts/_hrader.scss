@@ -1,0 +1,49 @@
+.header{
+    background-color:$black ;
+    .logo {
+        float: left;
+        text-align: center;
+        margin-right: 25px;
+        width:465px;
+        a{
+            text-transform: uppercase;
+            span{
+                color: #4285f4;
+                font-weight: 700;
+                font-size: 25px;
+            }
+            h4{
+                color: #34a853;
+                font-weight: 400;
+                font-size: 23px;
+            }
+        }
+    }
+    
+    .manu {
+        float: right;
+        width: 710px;
+        ul {
+            display: inline;
+            li {
+                display: inline;
+                a{
+                    text-transform: capitalize;
+                    font-size: 19px;
+                    padding: 15px;
+                    color: $white;
+                    &:hover{
+                        color: $header-color;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

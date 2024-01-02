@@ -1,0 +1,40 @@
+.section-title{
+    h2{
+        .fw-600 {
+            font-weight: 600 !important;
+        }
+        .text-24{
+            line-height: 1.3;
+        }
+        .opacity-1 {
+            opacity: 0.1;
+        }
+        .text-muted {
+            color: #6c757d!important;
+            text-transform: uppercase!important;
+        }
+    }
+}
+.singal-about {
+    border: 2px solid #7f7f7f;
+    float: left;
+    padding: 10px 32px;
+    width: 390px;
+    margin-right: 15px;
+    &:last-child {
+        margin-right: 0;
+    }
+    h4 {
+        font-size: 27px;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+    p {
+        margin:0 0 20px 0;
+        text-align: justify;
+    }
+    a {
+        color: #dddddd;
+    }
+    
+}
